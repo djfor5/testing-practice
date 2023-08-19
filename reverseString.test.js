@@ -1,13 +1,4 @@
-function reverseString(str) {
-  const strArr = str.split("");
-  const strArrReversed = [];
-  while (strArr.length) {
-    strArrReversed.push(strArr.pop());
-  }
-  const strReversed = strArrReversed.join("");
-
-  return strReversed;
-}
+import reverseString from "./reverseString.js";
 
 test("'hello' to be 'olleh'", () => { // eslint-disable-line no-undef
   expect(reverseString("hello")).toBe("olleh"); // eslint-disable-line no-undef

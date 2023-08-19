@@ -1,20 +1,4 @@
-class Calculator {
-  add(num1, num2) { // eslint-disable-line class-methods-use-this
-    return Number(num1) + Number(num2);
-  }
-
-  subtract(num1, num2) { // eslint-disable-line class-methods-use-this
-    return num1 - num2;
-  }
-
-  multiply(num1, num2) { // eslint-disable-line class-methods-use-this
-    return num1 * num2;
-  }
-
-  divide(num1, num2) { // eslint-disable-line class-methods-use-this
-    return num1 / num2;
-  }
-}
+import Calculator from "./calculator.js";
 
 test("1 + 2 equals 3", () => { // eslint-disable-line no-undef
   expect(new Calculator().add(1, 2)).toBe(3); // eslint-disable-line no-undef
